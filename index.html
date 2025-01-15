@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark scroll-smooth transition-colors" id="html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,7 +39,8 @@
 
         <!-- header area -->
 
-        <div class="container mx-auto px-4 sm:px-0 flex justify-between items-center py-3 flex-col sm:flex-row">
+    <div class="container mx-auto px-4 sm:px-0 flex justify-between items-center py-3 flex-col sm:flex-row">
+        <div class="flex flex-row w-full sm:w-auto items-center">
             <h1 class="font-bold text-3xl text-black dark:text-white basis-1/2"><a href="#">Ghost<span class="text-indigo-600 dark:text-indigo-400">World</span></a></h1>
 
             <div id="mobile_btn" class="basis-1/2 hover:cursor-pointer justify-end text-black dark:text-white sm:hidden flex">
@@ -53,7 +54,14 @@
             </div>
         </div>
 
-        <!-- menu -->
+        <!-- main-menu -->
+         <nav class="sm:flex w-full sm:auto hidden justify-end" id="main_menu">
+            <ul class="flex w-full sm:w-auto justify-end py-3 flex-col sm:flex-row dark:sm:bg-gray-900">
+                <li class="ml-0 sm:ml-8 text-center"><a href="/" class="font-semibold uppercase md:text-indigo-900 hover:text-indigo-500 hover:transition-colors">Home</a></li>
+            </ul>
+         </nav>
+    </div>
+         
     </header>
 
 
