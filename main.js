@@ -30,3 +30,10 @@ change_bth2.addEventListener('click', ()=> {
         change_image2.src='img/moon.svg'
     }
 })
+
+let main_menu = document.getElementById('main_menu');
+let mobile_btn = document.getElementById('mobile_btn');
+
+mobile_btn.addEventListener('click',()=>{
+    main_menu.classList.toggle('hidden')
+})
