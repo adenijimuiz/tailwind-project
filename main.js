@@ -8,9 +8,9 @@ change_bth.addEventListener('click', ()=> {
     // change image source base on preference
 
     if(change_image.src.includes('img/moon.svg')){
-        change_image.src = 'img/sun.svg';
+        change_image.src = 'assests/sun.svg';
     }else{
-        change_image.src='img/moon.svg'
+        change_image.src='assests/moon.svg'
     }
 })
 
@@ -25,9 +25,9 @@ change_bth2.addEventListener('click', ()=> {
     // change image source base on preference
 
     if(change_image2.src.includes('img/moon.svg')){
-        change_image2.src = 'img/sun.svg';
+        change_image2.src = 'assets/sun.svg';
     }else{
-        change_image2.src='img/moon.svg'
+        change_image2.src='assests/moon.svg'
     }
 })
 
