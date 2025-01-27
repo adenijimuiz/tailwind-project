@@ -24,7 +24,7 @@ change_bth2.addEventListener('click', ()=> {
 
     // change image source base on preference
 
-    if(change_image2.src.includes('img/moon.svg')){
+    if(change_image2.src.includes('assets/moon.svg')){
         change_image2.src = 'assets/sun.svg';
     }else{
         change_image2.src='assets/moon.svg'
