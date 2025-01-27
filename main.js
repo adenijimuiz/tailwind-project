@@ -27,7 +27,7 @@ change_bth2.addEventListener('click', ()=> {
     if(change_image2.src.includes('img/moon.svg')){
         change_image2.src = 'assets/sun.svg';
     }else{
-        change_image2.src='assests/moon.svg'
+        change_image2.src='assets/moon.svg'
     }
 })
 
