@@ -55,38 +55,40 @@
         </div>
 
         <!-- header area -->
-
-        <div class="container mx-auto bg-white px-4 sm:px-0 flex justify-between items-center py-3 flex-col sm:flex-row">
-            <div class="flex flex-row w-full sm:w-auto items-center">
-                <h1 class="font-bold text-3xl text-black dark:text-white basis-1/2"><a href="#">Ghost<span class="text-indigo-600 dark:text-indigo-400">World</span></a></h1>
-
-                <div id="mobile_btn" class="basis-1/2 hover:cursor-pointer justify-end text-black dark:text-white sm:hidden flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>                  
+        <div class="bg-white dark:bg-gray-900">
+            <div class="container mx-auto px-4 sm:px-0 flex justify-between items-center py-3 flex-col sm:flex-row">
+                <div class="flex flex-row w-full sm:w-auto items-center">
+                    <h1 class="font-bold text-3xl text-black dark:text-white basis-1/2"><a href="#">Ghost<span class="text-indigo-600 dark:text-indigo-400">World</span></a></h1>
+    
+                    <div id="mobile_btn" class="basis-1/2 hover:cursor-pointer justify-end text-black dark:text-white sm:hidden flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>                  
+                    </div>
+    
+                    <div class="sm:hidden block ml-5 cursor-pointer bg-indigo-400 hover:bg-indigo-200 p-4 rounded-full hover:transition-colors" id="change_btn">
+                        <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3e%3cpath%20d='M279.135%20512c78.756%200%20150.982-35.804%20198.844-94.775%2028.27-34.831-2.558-85.722-46.249-77.401-82.348%2015.683-158.272-47.268-158.272-130.792%200-48.424%2026.06-92.292%2067.434-115.836%2038.745-22.05%2028.999-80.788-15.022-88.919A257.936%20257.936%200%200%200%20279.135%200c-141.36%200-256%20114.575-256%20256%200%20141.36%20114.576%20256%20256%20256zm0-464c12.985%200%2025.689%201.201%2038.016%203.478-54.76%2031.163-91.693%2090.042-91.693%20157.554%200%20113.848%20103.641%20199.2%20215.252%20177.944C402.574%20433.964%20344.366%20464%20279.135%20464c-114.875%200-208-93.125-208-208s93.125-208%20208-208z'/%3e%3c/svg%3e" id="change_image" alt="" class="w-5">
+                    </div>
                 </div>
-
-                <div class="sm:hidden block ml-5 cursor-pointer bg-indigo-400 hover:bg-indigo-200 p-4 rounded-full hover:transition-colors" id="change_btn">
-                    <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3e%3cpath%20d='M279.135%20512c78.756%200%20150.982-35.804%20198.844-94.775%2028.27-34.831-2.558-85.722-46.249-77.401-82.348%2015.683-158.272-47.268-158.272-130.792%200-48.424%2026.06-92.292%2067.434-115.836%2038.745-22.05%2028.999-80.788-15.022-88.919A257.936%20257.936%200%200%200%20279.135%200c-141.36%200-256%20114.575-256%20256%200%20141.36%20114.576%20256%20256%20256zm0-464c12.985%200%2025.689%201.201%2038.016%203.478-54.76%2031.163-91.693%2090.042-91.693%20157.554%200%20113.848%20103.641%20199.2%20215.252%20177.944C402.574%20433.964%20344.366%20464%20279.135%20464c-114.875%200-208-93.125-208-208s93.125-208%20208-208z'/%3e%3c/svg%3e" id="change_image" alt="" class="w-5">
-                </div>
+    
+                <!-- main-menu -->
+                <nav class="sm:flex w-full sm:auto hidden justify-end" id="main_menu">
+                    <ul class="flex w-full sm:w-auto justify-end py-3 flex-col sm:flex-row dark:sm:bg-gray-900">
+                        <li class="ml-0 sm:ml-8 text-center"><a href="" class="font-semibold uppercase md:text-indigo-900 hover:text-indigo-500 hover:transition-colors dark:text-indigo-400 hover:dark:text-indigo-200">Home</a></li>
+                        <li class="ml-0 sm:ml-8 text-center"><a href="#service" class="font-semibold uppercase md:text-indigo-900 hover:text-indigo-500 hover:transition-colors dark:text-indigo-400 hover:dark:text-indigo-200">Service</a></li>
+                        <li class="ml-0 sm:ml-8 text-center"><a href="brands" class="font-semibold uppercase md:text-indigo-900 hover:text-indigo-500 hover:transition-colors dark:text-indigo-400 hover:dark:text-indigo-200">Brands</a></li>
+                        <li class="ml-0 sm:ml-8 text-center"><a href="#portfolio" class="font-semibold uppercase md:text-indigo-900 hover:text-indigo-500 hover:transition-colors dark:text-indigo-400 hover:dark:text-indigo-200">Portfolio</a></li>
+                        <li class="ml-0 sm:ml-8 text-center"><a href="#blog" class="font-semibold uppercase md:text-indigo-900 hover:text-indigo-500 hover:transition-colors dark:text-indigo-400 hover:dark:text-indigo-200">Blog</a></li>
+                        <li class="ml-0 sm:ml-8 text-center mt-3 sm:mt-0"><a href="#contact" class="btn">Let's Talk</a></li>
+                    </ul>
+    
+                    <div class="hidden sm:block ml-5 cursor-pointer bg-indigo-200 rounded-full p-4 hover:transition-colors" id="change_btn2">
+                        <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3e%3cpath%20d='M279.135%20512c78.756%200%20150.982-35.804%20198.844-94.775%2028.27-34.831-2.558-85.722-46.249-77.401-82.348%2015.683-158.272-47.268-158.272-130.792%200-48.424%2026.06-92.292%2067.434-115.836%2038.745-22.05%2028.999-80.788-15.022-88.919A257.936%20257.936%200%200%200%20279.135%200c-141.36%200-256%20114.575-256%20256%200%20141.36%20114.576%20256%20256%20256zm0-464c12.985%200%2025.689%201.201%2038.016%203.478-54.76%2031.163-91.693%2090.042-91.693%20157.554%200%20113.848%20103.641%20199.2%20215.252%20177.944C402.574%20433.964%20344.366%20464%20279.135%20464c-114.875%200-208-93.125-208-208s93.125-208%20208-208z'/%3e%3c/svg%3e" class="w-5" id="change_image2" alt="">
+                    </div>
+                </nav>
             </div>
-
-            <!-- main-menu -->
-            <nav class="sm:flex w-full sm:auto hidden justify-end" id="main_menu">
-                <ul class="flex w-full sm:w-auto justify-end py-3 flex-col sm:flex-row dark:sm:bg-gray-900">
-                    <li class="ml-0 sm:ml-8 text-center"><a href="" class="font-semibold uppercase md:text-indigo-900 hover:text-indigo-500 hover:transition-colors dark:text-indigo-400 hover:dark:text-indigo-200">Home</a></li>
-                    <li class="ml-0 sm:ml-8 text-center"><a href="#service" class="font-semibold uppercase md:text-indigo-900 hover:text-indigo-500 hover:transition-colors dark:text-indigo-400 hover:dark:text-indigo-200">Service</a></li>
-                    <li class="ml-0 sm:ml-8 text-center"><a href="brands" class="font-semibold uppercase md:text-indigo-900 hover:text-indigo-500 hover:transition-colors dark:text-indigo-400 hover:dark:text-indigo-200">Brands</a></li>
-                    <li class="ml-0 sm:ml-8 text-center"><a href="#portfolio" class="font-semibold uppercase md:text-indigo-900 hover:text-indigo-500 hover:transition-colors dark:text-indigo-400 hover:dark:text-indigo-200">Portfolio</a></li>
-                    <li class="ml-0 sm:ml-8 text-center"><a href="#blog" class="font-semibold uppercase md:text-indigo-900 hover:text-indigo-500 hover:transition-colors dark:text-indigo-400 hover:dark:text-indigo-200">Blog</a></li>
-                    <li class="ml-0 sm:ml-8 text-center mt-3 sm:mt-0"><a href="#contact" class="btn">Let's Talk</a></li>
-                </ul>
-
-                <div class="hidden sm:block ml-5 cursor-pointer bg-indigo-200 rounded-full p-4 hover:transition-colors" id="change_btn2">
-                    <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3e%3cpath%20d='M279.135%20512c78.756%200%20150.982-35.804%20198.844-94.775%2028.27-34.831-2.558-85.722-46.249-77.401-82.348%2015.683-158.272-47.268-158.272-130.792%200-48.424%2026.06-92.292%2067.434-115.836%2038.745-22.05%2028.999-80.788-15.022-88.919A257.936%20257.936%200%200%200%20279.135%200c-141.36%200-256%20114.575-256%20256%200%20141.36%20114.576%20256%20256%20256zm0-464c12.985%200%2025.689%201.201%2038.016%203.478-54.76%2031.163-91.693%2090.042-91.693%20157.554%200%20113.848%20103.641%20199.2%20215.252%20177.944C402.574%20433.964%20344.366%20464%20279.135%20464c-114.875%200-208-93.125-208-208s93.125-208%20208-208z'/%3e%3c/svg%3e" class="w-5" id="change_image2" alt="">
-                </div>
-            </nav>
         </div>
+    
     </header>
 
     <!-- hero area -->
