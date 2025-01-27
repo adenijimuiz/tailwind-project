@@ -7,7 +7,7 @@ change_bth.addEventListener('click', ()=> {
 
     // change image source base on preference
 
-    if(change_image.src.includes('img/moon.svg')){
+    if(change_image.src.includes('assets/moon.svg')){
         change_image.src = 'assets/sun.svg';
     }else{
         change_image.src='assets/moon.svg'
