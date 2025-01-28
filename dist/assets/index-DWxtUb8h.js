@@ -1,1 +1,37 @@
-(function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))c(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const s of t.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&c(s)}).observe(document,{childList:!0,subtree:!0});function l(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function c(e){if(e.ep)return;e.ep=!0;const t=l(e);fetch(e.href,t)}})();let i=document.getElementById("html"),d=document.getElementById("change_btn"),r=document.getElementById("change_image");d.addEventListener("click",()=>{i.classList.toggle("dark"),r.src.endsWith("moon.svg")?r.src="assets/sun.svg":r.src="assets/moon.svg"});let a=document.getElementById("change_btn2"),o=document.getElementById("change_image2");a.addEventListener("click",()=>{i.classList.toggle("dark"),o.src.endsWith("moon.svg")?o.src="assets/sun.svg":o.src="assets/moon.svg"});let m=document.getElementById("main_menu"),g=document.getElementById("mobile_btn");g.addEventListener("click",()=>{m.classList.toggle("hidden")});
+let html = document.getElementById('html');
+let change_bth = document.getElementById('change_btn');
+let change_image = document.getElementById('change_image');
+
+change_bth.addEventListener('click', () => {
+    html.classList.toggle('dark');
+
+    // Change image source based on preference
+    if (change_image.src.endsWith('moon.svg')) {
+        change_image.src = 'assets/sun.svg';
+    } else {
+        change_image.src = 'assets/moon.svg';
+    }
+});
+
+// Desktops
+let change_bth2 = document.getElementById('change_btn2');
+let change_image2 = document.getElementById('change_image2');
+
+change_bth2.addEventListener('click', () => {
+    html.classList.toggle('dark');
+
+    // Change image source based on preference
+    if (change_image2.src.endsWith('moon.svg')) {
+        change_image2.src = 'assets/sun.svg';
+    } else {
+        change_image2.src = 'assets/moon.svg';
+    }
+});
+
+// Mobile menu toggle
+let main_menu = document.getElementById('main_menu');
+let mobile_btn = document.getElementById('mobile_btn');
+
+mobile_btn.addEventListener('click', () => {
+    main_menu.classList.toggle('hidden');
+});
